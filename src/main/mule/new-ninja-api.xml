@@ -97,7 +97,8 @@ output application/json
         </error-handler>
     </flow>
     <flow name="get:\series:ninja-code-api-config">
-        <ee:transform doc:name="random series">
+        <logger level="INFO" doc:name="start" doc:id="ff61f536-72d1-4aef-8ced-7ea9c514dad9" message="init flow"/>
+		<ee:transform doc:name="random series">
             <ee:message>
                 <ee:set-payload><![CDATA[%dw 2.0
 output application/json
