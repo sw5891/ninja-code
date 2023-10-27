@@ -4,17 +4,21 @@
 
 	<groupId>99b9a835-d114-4561-8264-18540eddfb44</groupId>
 	<artifactId>ninja-code</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
 	<name>ninja-code</name>
 
+	<description/>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<app.runtime>4.4.0-20230522</app.runtime>
 		<mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
+		<tags/>
+		<categories>[]</categories>
+		<fields>[]</fields>
 	</properties>
 	<distributionManagement>
 		<repository>
@@ -34,9 +38,31 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
+				<version>3.8.7</version>
 				<extensions>true</extensions>
 				<configuration>
+					<cloudhub2Deployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<provider>MC</provider>
+						<businessGroup>na</businessGroup>
+						<environment>Sandbox</environment>
+						<target>Cloudhub-US-East-2</target>
+						<muleVersion>4.4.0</muleVersion>
+						<username>shrutiw22</username>
+						<password>dighoq-xycveZ-xedzu5</password>
+						<applicationName>ninja-code-api</applicationName>
+						<replicas>1</replicas>
+						<deploymentTimeout>300000</deploymentTimeout>
+						<vCores>1</vCores>
+						<deploymentSettings>
+							<http>
+								<inbound>
+									<publicUrl>https://ninja-code-api.anypoint.com</publicUrl>
+									<forwardSslSession>true</forwardSslSession>
+								</inbound>
+							</http>
+						</deploymentSettings>
+					</cloudhub2Deployment>
 					<classifier>mule-application</classifier>
 				</configuration>
 			</plugin>
