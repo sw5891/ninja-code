@@ -1,3 +1,5 @@
 # ninja-code
 ##Changelog
-Adding a logger
+#Adding a logger
+##Rename
+#Renamed the api

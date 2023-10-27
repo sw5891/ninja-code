@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>99b9a835-d114-4561-8264-18540eddfb44</groupId>
-	<artifactId>ninja-code</artifactId>
+	<artifactId>new-ninja-api</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
-	<name>ninja-code</name>
+	<name>new-ninja-api</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -64,8 +64,8 @@
 		</dependency>
 		<dependency>
 			<groupId>99b9a835-d114-4561-8264-18540eddfb44</groupId>
-			<artifactId>ninja-code-api</artifactId>
-			<version>0.0.2</version>
+			<artifactId>new-ninja-api</artifactId>
+			<version>0.0.1</version>
 			<classifier>raml</classifier>
 			<type>zip</type>
 		</dependency>
